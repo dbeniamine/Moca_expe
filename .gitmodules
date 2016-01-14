@@ -1,0 +1,21 @@
+[submodule "Moca"]
+	path = Moca
+	url = https://github.com/dbeniamine/MOCA
+[submodule "MemProf/library"]
+	path = MemProf/library
+	url = https://github.com/Memprof/library
+[submodule "MemProf/scripts"]
+	path = MemProf/scripts
+	url = https://github.com/Memprof/scripts
+[submodule "MemProf/module"]
+	path = MemProf/module
+	url = https://github.com/Memprof/module
+[submodule "MemProf/parser"]
+	path = MemProf/parser
+	url = https://github.com/Memprof/parser
+[submodule "Mitos"]
+	path = Mitos
+	url = https://github.com/scalability-llnl/Mitos.git
+[submodule "tabarnac"]
+	path = tabarnac
+	url = https://github.com/dbeniamine/Tabarnac
