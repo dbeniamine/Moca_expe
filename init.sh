@@ -1,5 +1,5 @@
 #!/bin/bash
-archiveurl="TODO"
+archiveurl="https://zenodo.org/record/44754/files/jessie.tgz"
 echo "Retrieving submodules"
 git submodule init
 git submodule update
