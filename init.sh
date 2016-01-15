@@ -4,7 +4,7 @@ echo "Retrieving submodules"
 git submodule init
 git submodule update
 echo "Retrieving jessie environment (might be slow)"
-wget $archiveurl
+echo wget $archiveurl
 if [ $? -ne 0 ]
 then
     echo "It seems to be an issue with wget, please download the archive;
@@ -12,6 +12,12 @@ then
 fi
 echo "Patching MemProf module"
 cd MemProf/module
-sed -i 's/\(int max_cnt_op =\).*;/\1 0x1FFFF0;/' mod-memprof.c
-cd -
+git apply ../../MemProf.patch
+cd ../..
+
+echo "Patching Mitos"
+cd Mitos
+git apply ../Mitos.patch
+cd ..
+
 echo "You're all set !"

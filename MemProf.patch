@@ -1,0 +1,13 @@
+diff --git a/mod-memprof.c b/mod-memprof.c
+index 08547b4..353faf4 100644
+--- a/mod-memprof.c
++++ b/mod-memprof.c
+@@ -47,7 +47,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ #include "mod-memprof.h"
+ #include "perf.h"
+ 
+-int max_cnt_op = 0x8FFF0;               // sampling period
++int max_cnt_op = 0x1FFFF0;               // sampling period
+ int ibs_filter = IBS_INCLUDE_L3 
+                | IBS_INCLUDE_REMOTE_CACHE 
+                | IBS_INCLUDE_DRAM;

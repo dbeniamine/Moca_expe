@@ -1,0 +1,13 @@
+diff --git a/src/perfsmpl.cpp b/src/perfsmpl.cpp
+index 7e8438f..53454f2 100644
+--- a/src/perfsmpl.cpp
++++ b/src/perfsmpl.cpp
+@@ -79,7 +79,7 @@ void perfsmpl::init_attr()
+     {
+         // TODO: look this up in libpfm
+         pe.type = PERF_TYPE_RAW;
+-        pe.config = 0x5101cd;
++        pe.config = 0x100b;
+         pe.config1 = sample_threshold; // ldlat
+         pe.sample_type =
+             PERF_SAMPLE_IP |
