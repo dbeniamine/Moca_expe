@@ -8,7 +8,7 @@ We provides three different levels of reproducibility of our experiments which
 represents the diffrents steps of the [experimental pipeline](#fig:pipe):
 
 1. **Experiment reproduction** (distribuable environment): reproduce the whole
-expriment, requires access to grid5000 machine or similar ones
+expriment, requires access to grid5000 machine or similar ones.
 2. **Raw analysis**: Parse our raw traces and reproduce the complete analysis
 requires only a unix with standard command and `R` installed.
 3. **Statistic analysis:** Reproduce only the final analysis, requires only
@@ -55,8 +55,8 @@ The experiment was run on grid5000 machines from
 and [Idfreeze](http://digitalis.inria.fr/index.php/Idfreeze) machine from
 digitalis.
 
-Please note that the NAS_* experiment are very slow: it toolks 14h onn 8
-machines for `NAS_edel`, and **TODO +72h** for `NAS_idfreeze`.
+Please note that the NAS_* experiment are very slow: it tooks 14h on 8
+machines for `NAS_edel`, and more than 72h for `NAS_idfreeze`.
 
 #### If you have access to Grid5000 and Digitalis machines
 
