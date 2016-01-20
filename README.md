@@ -38,7 +38,7 @@ Each of these directories contains several files:
 
 
 
-## Raw analusis
+## Raw analysis
 
 
 It is also possible to download the raw trace file on zenodo **Link available
