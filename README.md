@@ -7,10 +7,11 @@ System" submitted at HPDC'16.
 We provides three different levels of reproducibility of our experiments which
 represents the diffrents steps of the [experimental pipeline](#fig:pipe):
 
-1. **Experiment reproduction** (distribuable environment): reproduce the whole
-expriment, requires access to grid5000 machine or similar ones.
+1. **Experimental setup:**: Every thing required (except the machines) to
+reproduce the whole expriment.
 2. **Raw analysis**: Parse our raw traces and reproduce the complete analysis
-requires only a unix with standard command and `R` installed.
+requires only a unix with standard command and `R` installed. **Warning:** these
+traces are quite heavy, it represent around 80Gib of data !
 3. **Statistic analysis:** Reproduce only the final analysis, requires only
 `R`.
 
@@ -18,8 +19,10 @@ requires only a unix with standard command and `R` installed.
 
 ## Statistic analysis
 
-All the files needed to reproduce our statistic analysis are in this archive
-**Link available soon**.
+All the files needed to reproduce our statistic analysis are in this archive:
+
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.45044.svg)](http://dx.doi.org/10.5281/zenodo.45044)
+
 The archive contains 3 directories:
 
 * `Global-NAS_edel`: results of the experiment from Edel machines.
