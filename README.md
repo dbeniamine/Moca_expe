@@ -17,11 +17,19 @@ traces are quite heavy, it represent around 80Gib of data !
 
 <a name="fig:pipe"><img src="img/pipeline.png" height="700" alt="Experimental pipeline"></a>
 
-## Statistic analysis
 
-All the files needed to reproduce our statistic analysis are in this archive:
+## Analysis
+
+Every files needed to re run the analysis (raw and statistic) are available at
+zenodo:
 
 [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.45044.svg)](http://dx.doi.org/10.5281/zenodo.45044)
+
+### Statistic analysis
+
+All the files needed to reproduce our statistic analysis are in the archive
+named `statistic_analysis.tgz` on the zenodo upload linked above.
+
 
 The archive contains 3 directories:
 
@@ -38,11 +46,11 @@ Each of these directories contains several files:
 
 
 
-## Raw analysis
+### Raw analysis
 
 
-It is also possible to download the raw trace file on zenodo **Link available
-soon** to
+The previous zenodo link also contain the raw traces `raw_traces.tar.xz` (*The
+link will be online soon*) to
 replay the filtration phase or analyse the log files.
 The archive contains a `README` explaining the file hierarchy, running
 `./parse_and_plot.sh` will generate the file included in the statistic
