@@ -19,3 +19,15 @@
 [submodule "tabarnac"]
 	path = tabarnac
 	url = https://github.com/dbeniamine/Tabarnac
+[submodule "MemProfTun/library"]
+	path = MemProfTun/library
+	url = https://github.com/Memprof/library
+[submodule "MemProfTun/scripts"]
+	path = MemProfTun/scripts
+	url = https://github.com/Memprof/scripts
+[submodule "MemProfTun/module"]
+	path = MemProfTun/module
+	url = https://github.com/Memprof/module
+[submodule "MemProfTun/parser"]
+	path = MemProfTun/parser
+	url = https://github.com/Memprof/parser

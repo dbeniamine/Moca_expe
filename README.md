@@ -28,13 +28,14 @@ zenodo:
 
 All the files needed to reproduce our statistic analysis are available at
 zenodo:
-[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.45044.svg)](http://dx.doi.org/10.5281/zenodo.45044)
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.46380.svg)](http://dx.doi.org/10.5281/zenodo.46380)
+
 
 
 The archive contains 3 directories:
 
 * `Global-NAS_edel`: results of the experiment from Edel machines.
-* `Global-NAS_idfreeze`: results of the experiment from Idfreeze machine.
+* `Global-NAS_stremi`: results of the experiment from StRemi machines.
 * `Global-param`: results of the experiment on Moca parameters (Edel).
 
 Each of these directories contains several files:
@@ -48,7 +49,9 @@ Each of these directories contains several files:
 
 ### Raw analysis
 
-The following link: [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.45128.svg)](http://dx.doi.org/10.5281/zenodo.45128)
+The following link:
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.46525.svg)](http://dx.doi.org/10.5281/zenodo.46525)
+
 contains all the archive
 required for reproducing the whole raw ranalysis. To do so, first download and
 extract the `raw.tgz` archive, than download and extract each other archive in
@@ -63,12 +66,13 @@ analysis.
 ### How-to
 
 The experiment was run on grid5000 machines from
-[Edel cluster](https://www.grid5000.fr/mediawiki/index.php/Grenoble:Hardware#Edel)
-and [Idfreeze](http://digitalis.inria.fr/index.php/Idfreeze) machine from
-digitalis.
+[Edel](https://www.grid5000.fr/mediawiki/index.php/Grenoble:Hardware#Edel)
+and
+[StRemi](https://www.grid5000.fr/mediawiki/index.php/Reims:Hardware#Stremi)
+clusterss, respectively from Grenoble and Reims.
 
-Please note that the NAS_* experiment are very slow: it tooks 14h on 8
-machines for `NAS_edel`, and more than 72h for `NAS_idfreeze`.
+Please note that the NAS_* experiment are very slow: it tooks 14h on 6
+machines for `NAS_edel`, and a bit more for `NAS_StRemi`.
 
 #### If you have access to Grid5000 and Digitalis machines
 
@@ -84,7 +88,7 @@ pat to `jessie.tgz` on line 10.
 
 You can now deploy the image on one of Edel nodes and, as root, run
 `~/Moca/test/perf_test_NAS_g5ksh` for the tool comparisons. Same thing on
-Idfreeze (Digitalis).  For the parameter test run `sudo
+StRemi.  For the parameter test run `sudo
 ~/Moca/test/perf_test_param_g5k.sh`  on an Edel machine.
 
 #### If you don't
@@ -95,7 +99,7 @@ Debian Jessie the file `pkg-list` contains the list of installed packages.
 Then it is necessary to install
 (DynInst-8.2.1)[http://www.dyninst.org/downloads/dyninst-8.x]
 
-Once this is done, follow the same state as for g5k user and edit the line 16
-and 200 of `Moca/test/perf_test_NAS_g5k.sh` to change the test on Idfreeze name.
+Once this is done, follow the same state as for g5k user and edit the line 18
+and 202 of `Moca/test/perf_test_NAS_g5k.sh` to change the test on StRemi name.
 
 Everything should work.
