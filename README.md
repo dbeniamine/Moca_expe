@@ -1,8 +1,8 @@
-# HPDC'16 experiments
+# Moca experiments
 
 This repository provides all the requirements to reproduce the experiments
 presented in the article: "Moca: An Efficient Memory Trace Collection
-System" submitted at HPDC'16.
+System" submitted at CLUSTER'16.
 
 We provides three different levels of reproducibility of our experiments which
 represents the diffrents steps of the [experimental pipeline](#fig:pipe):
