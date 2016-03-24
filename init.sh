@@ -11,10 +11,21 @@ then
     '$archiveurl' to the root of this repository"
 fi
 
-echo "Patching MemProf module"
-cd MemProf/module
+echo "Patching MemProf scipts"
+cd MemProf/scripts
 git apply ../../MemProf.patch
 cd ../..
+
+echo "Patching MemProfTun scipts"
+cd MemProfTun/scripts
+git apply ../../MemProf.patch
+cd ../..
+
+echo "Patching MemProfTun module"
+cd MemProf/module
+git apply ../../MemProfTun.patch
+cd ../..
+
 
 echo "Patching Mitos"
 cd Mitos

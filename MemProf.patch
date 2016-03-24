@@ -1,13 +1,14 @@
-diff --git a/mod-memprof.c b/mod-memprof.c
-index 08547b4..353faf4 100644
---- a/mod-memprof.c
-+++ b/mod-memprof.c
-@@ -47,7 +47,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
- #include "mod-memprof.h"
- #include "perf.h"
+diff --git a/profile_app.sh b/profile_app.sh
+index d5155ca..83381ed 100755
+--- a/profile_app.sh
++++ b/profile_app.sh
+@@ -10,7 +10,8 @@ sudo insmod $MEMPROF_PATH/module/memprof.ko
+ rm /tmp/data.raw.*
  
--int max_cnt_op = 0x8FFF0;               // sampling period
-+int max_cnt_op = 0x1FFFF0;               // sampling period
- int ibs_filter = IBS_INCLUDE_L3 
-                | IBS_INCLUDE_REMOTE_CACHE 
-                | IBS_INCLUDE_DRAM;
+ echo 'b' > /proc/memprof_cntl
+-env LD_PRELOAD=$MEMPROF_PATH/library/ldlib.so $@
++#env LD_PRELOAD=$MEMPROF_PATH/library/ldlib.so $@
++$@
+ echo 'e' > /proc/memprof_cntl
+ 
+ cat /proc/memprof_ibs > ibs.raw 
