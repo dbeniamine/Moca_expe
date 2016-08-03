@@ -4,7 +4,7 @@ echo "Retrieving submodules"
 git submodule init
 git submodule update
 echo "Retrieving jessie environment (might be slow)"
-echo wget $archiveurl
+wget $archiveurl
 if [ $? -ne 0 ]
 then
     echo "It seems to be an issue with wget, please download the archive;
